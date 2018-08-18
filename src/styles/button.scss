@@ -1,0 +1,45 @@
+button {
+  outline: none;
+  border: none;
+}
+
+.btn {
+  border: none;
+  position: relative;
+  z-index: 1;
+  outline: none !important;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:active, &:focus {
+    box-shadow: none;
+    outline: 0px;
+  }
+
+  &__promo {
+    padding: 10px 20px 11px 20px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    border-radius: 22px;
+    border: none;
+    color: white;
+    box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
+    @include transition(all .2s ease-in-out);
+    text-transform: uppercase;
+    background-color: $color-deep;
+
+    @media (max-width: $screen-sm){
+      font-size: 14px;
+    }
+    @media (max-width: $screen-md){
+
+    }
+
+    &:hover, &:focus {
+      opacity: $opacity-main;
+      color: white;
+      box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
+    }
+  }
+}

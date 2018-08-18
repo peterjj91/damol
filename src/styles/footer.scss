@@ -1,0 +1,110 @@
+.footer {
+  background-color: #0095d9;
+  padding: 25px 0px 28px 0px;
+  color: white;
+  position: relative;
+
+  @media (max-width: $screen-md) {
+
+  }
+  @media (max-width: $screen-sm) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 85px;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("../img/big-line-white.png");
+    width: 266px;
+    height: 44px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__container {
+    @extend .container;
+  }
+
+  &__content {
+    //align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 166px;
+    padding-left: 17px;
+
+    @media (max-width: $screen-sm) {
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 0;
+    padding-top: 6px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+
+    @media (max-width: $screen-sm) {
+      padding-top: 20px;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 44px;
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @media (max-width: $screen-xs) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__made {
+    float: right;
+    margin-top: 33px;
+    font-size: 14px;
+
+    @media (max-width: $screen-sm) {
+      float: none;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}

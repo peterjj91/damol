@@ -1,0 +1,19 @@
+.product {
+
+
+  &__content {
+    @include make-row;
+
+    &__slider {
+      @include make-xs-column(24);
+      @include make-sm-column(15.6);
+    }
+
+    &__description {
+      @include make-xs-column(24);
+      @include make-sm-column(7.3);
+      @include make-sm-column-offset(0.7);
+    }
+  }
+}
+

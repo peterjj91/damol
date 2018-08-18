@@ -1,0 +1,24 @@
+
+.search-main {
+  position: relative;
+
+  @media(min-width: $screen-lg) {
+    width: 616px;
+  }
+  @media(min-width: $screen-md) {
+    width: 400px;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__btn {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    right: 1px;
+    margin-top: 2px;
+    background-color: transparent;
+  }
+}

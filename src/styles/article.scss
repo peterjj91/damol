@@ -1,0 +1,16 @@
+
+.article {
+  &__row {
+    @include make-row;
+  }
+
+  &__content {
+    @include make-xs-column(24);
+    @include make-sm-column(15.8);
+  }
+
+  &__side {
+    @include make-xs-column(7.7);
+    @include make-xs-column-offset(0.5);
+  }
+}
