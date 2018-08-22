@@ -1,0 +1,75 @@
+
+.calendar-item {
+    font-family: $officinaserifc-bold;
+    margin-bottom: 30px;
+
+    .datepicker-inline {
+        width: 100%;
+        border: 2px solid #0095d9;
+        border-radius: 9px;
+        padding: 15px 3px 15px 3px;
+
+        .table-condensed {
+            width: 100%;
+
+            thead {
+                tr {
+                    .dow {
+                        padding-top: 9px;
+                        font-size: 15px;
+                        padding-bottom: 22px;
+                    }
+
+                    td {
+
+                    }
+                }
+            }
+
+            tbody {
+                .day {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+
+                    &.new {
+                        // display: none;
+                    }
+                    &.active {
+                        background: #0095d9;
+                        color: white;
+
+                        &:hover {
+                            background: #0095d9;
+                            color: white;
+                        }
+                    }
+                }
+                .highlighted {
+                    border-radius: 4px;
+                    background: transparent;
+                    color: #ff4d4d;
+
+                    &:hover, &:focus {
+                        background: #eee;
+                    }
+                }
+            }
+        }
+
+        .datepicker-switch {
+            width: auto;
+            font-size: 19px;
+            color: #0095d9;
+            cursor: default;
+
+            &:hover, &:focus {
+                background-color: transparent;
+            }
+        }
+
+        .prev, .next {
+            font-size: 19px;
+            color: #0095d9;
+        }
+    }
+}

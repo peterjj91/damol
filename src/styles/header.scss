@@ -1,7 +1,6 @@
 
 .header {
   padding-top: 28px;
-  background-color: $color-promo;
   position: relative;
   padding-bottom: 34px;
 
@@ -29,6 +28,14 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media(max-width: $screen-sm){
+      display: none;
+    }
+  }
+
+  &--blue {
+    background-color: $color-promo;
   }
 
   &__container {

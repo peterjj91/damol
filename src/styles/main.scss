@@ -1,6 +1,7 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "../../bower_components/bootstrap-select/sass/bootstrap-select";
 @import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "bootstrap-datepicker";
 @import "sidr";
 @import "fancybox";
 
@@ -17,15 +18,18 @@
 @import "form-elements";
 @import "dropdown";
 @import "nav";
+@import "calendar";
 
 @import "header";
 @import "footer";
 
 @import "slider";
+@import "article";
+@import "catalog";
 @import "promo";
 @import "item";
 @import "news";
-@import "article";
+@import "faq";
 @import "tab";
 @import "search";
 @import "contact";

@@ -2,11 +2,12 @@
 .search-main {
   position: relative;
 
+
+  @media(min-width: $screen-sm) {
+    width: 400px;
+  }
   @media(min-width: $screen-lg) {
     width: 616px;
-  }
-  @media(min-width: $screen-md) {
-    width: 400px;
   }
 
   &__input {

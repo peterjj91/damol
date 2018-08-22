@@ -127,3 +127,15 @@ $('.promo-slider').slick({
         }
     ]
 });
+
+// datepicker
+$(document).ready(function() {
+    $('.calendar-item').datepicker({
+        language: 'ru',
+        format: 'MM',
+        minViewMode: 'days',
+        maxViewMode: 'days',
+        startView: 'days',
+        daysOfWeekHighlighted: [0,6]
+    });
+});

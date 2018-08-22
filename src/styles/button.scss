@@ -41,5 +41,17 @@ button {
       color: white;
       box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
     }
+
+    &--clear {
+        background-color: transparent;
+        color: #2b2b2b;
+        box-shadow: none;
+
+        &:hover, &:focus {
+            background-color: trasparent;
+            color: #2b2b2b;
+            box-shadow: none;
+        }
+    }
   }
 }
