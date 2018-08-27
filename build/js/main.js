@@ -39548,16 +39548,6 @@ $(document).ready(function() {
     $('select').selectpicker();
 });
 
-// slick
-$(document).ready(function() {
-    $('.promo-slider').slick({
-        dots: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 5000
-    });
-});
-
 // sidr menu
 $(document).ready(function() {
     $('#right-menu').sidr({
@@ -39588,51 +39578,6 @@ $('.anchor-scroll').click(function(){
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
-});
-
-// product slider
-$('.product-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    arrows: true,
-    fade: true,
-    speed: 300,
-    lazyLoad: 'ondemand',
-    asNavFor: '.product-nav',
-    prevArrow: '<div class="slick-prev"><i class="i-chev-left-thin"></i><span class="sr-text">Previous</span></div>',
-    nextArrow: '<div class="slick-next"><i class="i-chev-right-thin"></i><span class="sr-text">Next</span></div>'
-});
-
-$('.product-nav').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: false,
-    centerPadding: '0px',
-    asNavFor: '.product-for',
-    dots: false,
-    // centerMode: true,
-    draggable: true,
-    speed: 200,
-    focusOnSelect: true,
-    prevArrow: '<div class="slick-prev"><i class="i-chev-left-thin"></i><span class="sr-text">Previous</span></div>',
-    nextArrow: '<div class="slick-next"><i class="i-chev-right-thin"></i><span class="sr-text">Next</span></div>',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-
-            }
-        }
-    ]
-});
-
-//keeps thumbnails active when changing main image, via mouse/touch drag/swipe
-$('.product-for').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    //remove all active class
-    $('.product-nav .slick-slide').removeClass('slick-current');
-    //set active class for current slide
-    $('.product-nav .slick-slide:not(.slick-cloned)').eq(currentSlide).addClass('slick-current');
 });
 
 // slider promo-item--product

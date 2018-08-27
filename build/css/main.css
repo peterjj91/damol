@@ -8420,7 +8420,7 @@ input {
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 33px;
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+    box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
     @media (max-width: 700px) {
       .article-item__block {
         display: block;
@@ -8573,7 +8573,7 @@ input {
   .catalog-item__item {
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+    box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
   .catalog-item__img {
     display: block;
     height: 180px;
@@ -9047,12 +9047,12 @@ input {
     margin-bottom: 32px; }
   .promo-item__box {
     display: block;
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+    box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4);
     overflow: hidden;
     border-radius: 5px; }
     @media (max-width: 1300px) {
       .promo-item__box {
-        box-shadow: 5px 0px 15px rgba(136, 218, 255, 0.4); } }
+        box-shadow: 0px 0px 15px rgba(136, 218, 255, 0.4); } }
   .promo-item__top {
     min-height: 76px;
     margin-bottom: 10px; }
@@ -9161,7 +9161,7 @@ input {
     overflow: hidden;
     background-color: #0095d9;
     text-align: center;
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+    box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
     .attention-item__box__cell {
       display: table-cell;
       vertical-align: top;
@@ -9325,7 +9325,7 @@ input {
     .faq__content__title {
       margin-bottom: 13px; }
   .faq__list {
-    padding-left: 12px;
+    padding: 0;
     list-style: none;
     margin-bottom: 0px;
     font-family: "OfficinaSerifC-Bold"; }
@@ -9336,7 +9336,12 @@ input {
           margin-bottom: 0; } }
       .faq__list li:last-child {
         margin-bottom: 0; }
+      .faq__list li.active a {
+        color: white;
+        box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
+        background-color: #25baff; }
     .faq__list a {
+      padding-left: 23px;
       text-transform: none;
       font-size: 17px;
       letter-spacing: 0.5px;

@@ -51,7 +51,8 @@
     }
 
     &__list {
-        padding-left: 12px;
+        //padding-left: 12px;
+        padding: 0;
         list-style: none;
         margin-bottom: 0px;
         font-family: $officinaserifc-bold;
@@ -66,9 +67,18 @@
             &:last-child {
                 margin-bottom: 0;
             }
+
+            &.active {
+                a {
+                    color: white;
+                    box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
+                    background-color: #25baff;
+                }
+            }
         }
 
         a {
+            padding-left: 23px;
             text-transform: none;
             font-size: 17px;
             letter-spacing: 0.5px;
