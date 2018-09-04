@@ -34,4 +34,16 @@
   &__lock {
     @include sprite($lock);
   }
+
+  &__delete {
+    @include sprite($delete-black);
+  }
+
+  &__close {
+    @include sprite($close);
+  }
+
+  &__edit {
+    @include sprite($edit-black);
+  }
 }

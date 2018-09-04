@@ -1,4 +1,123 @@
 
 .contact {
+  $block-name: &; // #{$block-name}__element {}
 
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__item {
+    display: flex;
+    margin: 0px -15px;
+
+    @media(max-width: $screen-md){
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    @media(max-width: $screen-sm){
+      display: inline-block;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__block {
+      flex: 1;
+      padding: 0px 15px;
+
+      @media(max-width: $screen-md){
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      @media(max-width: $screen-sm){
+        flex: none;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+
+      #{$block-name} {
+        &__promo {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__promo {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    padding-top: 47px;
+    padding-left: 310px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+
+    @media(max-width: $screen-md){
+      padding-left: 200px;
+    }
+    @media(max-width: $screen-xs){
+      padding-left: 20px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 106px;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image: url(../img/big-line.png);
+      width: 266px;
+      height: 44px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media(max-width: $screen-md){
+        top: 139px;
+        width: 180px;
+        height: 35px;
+      }
+      @media(max-width: $screen-xs){
+        display: none;
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50px;
+      left: 75px;
+      width: 150px;
+      z-index: 0;
+      pointer-events: none;
+
+      @media(max-width: $screen-md){
+        left: 30px;
+      }
+      @media(max-width: $screen-xs){
+        position: relative;
+        left: auto;
+        top: inherit;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__map {
+    height: 350px;
+    width: 100%;
+    border: none;
+    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+
+    @media(max-width: $screen-sm){
+
+    }
+  }
 }

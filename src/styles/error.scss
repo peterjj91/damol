@@ -1,0 +1,57 @@
+
+.promo-error {
+  padding: 72px 0px 300px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+
+  @media(max-width: $screen-xs){
+    padding-bottom: 200px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 463px;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("../img/big-line-biggest.png");
+    width: 645px;
+    height: 110px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    @media(max-width: $screen-sm){
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $officinaserifc-bold;
+    margin-bottom: 29px;
+
+    @media(max-width: $screen-xs){
+      margin-bottom: 60px;
+    }
+  }
+
+  p {
+
+  }
+
+  &__big {
+    margin-top: 53px;
+    margin-left: 132px;
+    font-size: 192px;
+    color: #0095d9;
+    line-height: normal;
+
+    @media(max-width: $screen-sm){
+      margin-left: 0;
+      text-align: center;
+      font-size: 150px;
+    }
+  }
+}

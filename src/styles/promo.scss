@@ -2,7 +2,7 @@
 .promo-block {
   margin-bottom: 60px;
 
-  @media(max-width: $screen-sm){
+  @media(max-width: $screen-sm) {
     margin-bottom: 30px;
   }
 }
@@ -11,7 +11,7 @@
   @include make-row;
   display: flex;
 
-  @media(max-width: $screen-sm){
+  @media(max-width: $screen-sm) {
     display: block;
   }
 
@@ -20,7 +20,7 @@
     @include make-md-column(14.0);
     flex: auto;
 
-    @media(max-width: $screen-sm){
+    @media(max-width: $screen-sm) {
       margin-bottom: 30px;
     }
   }
@@ -32,7 +32,7 @@
     width: 297px !important;
     margin-left: 11px;
 
-    @media(max-width: $screen-sm){
+    @media(max-width: $screen-sm) {
       width: 100% !important;
       margin-left: 0;
     }
@@ -47,7 +47,7 @@
   padding-bottom: 110px;
   margin-bottom: 60px;
 
-  @media(max-width: $screen-md){
+  @media(max-width: $screen-md) {
     padding-bottom: 25px;
   }
 
@@ -55,7 +55,7 @@
     @include make-row;
     display: flex;
 
-    @media(max-width: $screen-md){
+    @media(max-width: $screen-md) {
       display: inline-block;
       width: 100%;
       vertical-align: top;
@@ -68,7 +68,7 @@
     @include make-md-column(15);
     flex: auto;
 
-    @media(max-width: $screen-md){
+    @media(max-width: $screen-md) {
       flex: none;
       padding: 0 !important;
       margin-bottom: 40px;
@@ -92,7 +92,7 @@
     width: 297px !important;
     padding-top: 6px;
 
-    @media(max-width: $screen-md){
+    @media(max-width: $screen-md) {
       width: 100% !important;
       padding: 0 !important;
     }
@@ -125,7 +125,7 @@
     border: 2px solid #0095d9;
     padding: 32px 35px 43px 35px;
 
-    @media(max-width: $screen-sm){
+    @media(max-width: $screen-sm) {
       padding: 15px 15px 15px 15px;
     }
   }
@@ -138,7 +138,7 @@
     padding-bottom: 20px;
     margin-bottom: 25px;
 
-    @media(max-width: $screen-xs){
+    @media(max-width: $screen-xs) {
       display: block;
       border-bottom: none;
       margin-bottom: 0;
@@ -152,7 +152,7 @@
 
       .promo-forum__block {
         &:last-child {
-          @media(max-width: $screen-xs){
+          @media(max-width: $screen-xs) {
             //margin-bottom: 0;
             padding-bottom: 0;
             border-bottom: none;
@@ -165,16 +165,16 @@
   &__block {
     flex: 1;
 
-    @media(max-width: $screen-xs){
+    @media(max-width: $screen-xs) {
       padding-bottom: 15px;
       margin-bottom: 15px;
       border-bottom: 1px solid #eeeeee;
     }
 
-    &:first-child{
+    &:first-child {
       flex: 1.2;
 
-      @media(max-width: $screen-sm){
+      @media(max-width: $screen-sm) {
 
       }
     }
@@ -234,159 +234,159 @@
 }
 
 .promo-square {
-    @include make-row;
-    margin: 0;
+  @include make-row;
+  margin: 0;
 
-    &__block {
-        @include make-xs-column(20);
-        @include make-md-column(17.1);
-        position: relative;
-        padding: 24px 33px 137px 33px !important;
-        background: white;
-        box-shadow: 5px 18px 46px rgba(0, 157, 230, 0.17);
-        border-radius: 5px;
-        margin-bottom: -126px;
+  &__block {
+    @include make-xs-column(20);
+    @include make-md-column(17.1);
+    position: relative;
+    padding: 24px 33px 137px 33px !important;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 18px 46px rgba(0, 157, 230, 0.17);
+    border-radius: 5px;
+    margin-bottom: -126px;
 
-        @media(max-width: $screen-xs){
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        &:nth-child(odd){
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: 51px;
-                left: 0;
-                z-index: 0;
-                pointer-events: none;
-                background-image: url(../img/big-line-grey.png);
-                width: 207px;
-                height: 44px;
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-
-        &:nth-child(even){
-            float: right;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        ul {
-            padding-left: 18px;
-        }
-
-        &--blue {
-            background: rgba(29,178,247,1);
-            background: linear-gradient(to bottom, rgba(29,178,247,1) 0%, rgba(0,142,208,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1db2f7', endColorstr='#008ed0', GradientType=0 );
-            color: white;
-
-            p {
-
-            }
-        }
+    @media(max-width: $screen-xs) {
+      width: 100%;
+      margin-bottom: 30px;
     }
 
-    p {
-        font-size: 16px;
-        margin-bottom: 18px;
+    &:nth-child(odd) {
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 51px;
+        left: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image: url(../img/big-line-grey.png);
+        width: 207px;
+        height: 44px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
+
+    &:nth-child(even) {
+      float: right;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    &--blue {
+      background: rgba(29, 178, 247, 1);
+      background: linear-gradient(to bottom, rgba(29, 178, 247, 1) 0%, rgba(0, 142, 208, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1db2f7', endColorstr='#008ed0', GradientType=0);
+      color: white;
+
+      p {
+
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
 }
 
 .promo-quick {
-    $block-name: &; // #{$block-name}__element {}
-    @include make-row;
-    font-size: 0;
-    margin-left: -16px;
-    margin-right: -16px;
-    margin-top: 23px;
+  $block-name: &; // #{$block-name}__element {}
+  @include make-row;
+  font-size: 0;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: 23px;
 
-    @media(max-width: $screen-md){
-        margin-left: -10px;
-        margin-right: -10px;
+  @media(max-width: $screen-md) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__block {
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(8);
+    display: inline-block;
+    vertical-align: top;
+    float: none !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-bottom: 33px;
+
+    @media(max-width: $screen-md) {
+      @include make-xs-column(24);
+      padding-left: 10px !important;
+      padding-right: 10px !important;
     }
 
-    &__block {
-        @include make-xs-column(12);
-        @include make-sm-column(12);
-        @include make-md-column(8);
-        display: inline-block;
-        vertical-align: top;
-        float: none !important;
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-        margin-bottom: 33px;
+    &--full {
+      @include make-xs-column(24);
 
-        @media(max-width: $screen-md){
-            @include make-xs-column(24);
-            padding-left: 10px !important;
-            padding-right: 10px !important;
+      #{$block-name} {
+        &__item {
+          display: flex;
+          align-items: center;
+          padding-left: 41px;
+          padding-right: 41px;
+          text-align: left;
+
+          @media(max-width: 500px) {
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
         }
 
-        &--full {
-            @include make-xs-column(24);
+        &__img {
+          flex: 0 0 96px;
+          margin: 0;
 
-            #{$block-name} {
-                &__item {
-                    display: flex;
-                    align-items: center;
-                    padding-left: 41px;
-                    padding-right: 41px;
-                    text-align: left;
-
-                    @media(max-width: 500px){
-                        display: inline-block;
-                        padding-left: 20px;
-                        padding-right: 20px;
-                    }
-                }
-
-                &__img {
-                    flex: 0 0 96px;
-                    margin: 0;
-
-                    @media(max-width: 500px){
-                        flex: none;
-                        width: 100%;
-                        text-align: center;
-                        margin-bottom: 30px;
-                    }
-                }
-            }
+          @media(max-width: 500px) {
+            flex: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+          }
         }
+      }
     }
+  }
 
-    &__item {
-        background: white;
-        padding: 20px 30px 10px 30px;
-        border-radius: 5px;
-        box-shadow: 5px 18px 46px rgba(0, 157, 230, 0.17);
-        text-align: center;
-        min-height: 182px;
+  &__item {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px 30px 10px 30px;
+    border-radius: 5px;
+    box-shadow: 5px 18px 46px rgba(0, 157, 230, 0.17);
+    text-align: center;
+    min-height: 182px;
+  }
+
+  &__img {
+    height: 57px;
+    overflow: hidden;
+    margin-bottom: 19px;
+
+    img {
+
     }
+  }
 
-    &__img {
-        height: 57px;
-        overflow: hidden;
-        margin-bottom: 19px;
+  &__description {
+    font-size: 16px;
+    line-height: 19px;
 
-        img {
+    p {
 
-        }
     }
-
-    &__description {
-        font-size: 16px;
-        line-height: 19px;
-
-        p {
-
-        }
-    }
+  }
 }

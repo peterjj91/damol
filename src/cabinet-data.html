@@ -1,0 +1,85 @@
+//= _head.html
+<main id="main" class="">
+    <div class="header header--blue">
+        //= _header.html
+    </div>
+
+    <div class="content">
+        <div class="container">
+
+            <div class="cabinet">
+                <div class="head-h3 cabinet__title">Личный кабинет</div>
+
+                <div class="cabinet__nav">
+                    <div class="cabinet__nav__block">
+                        <a href="cabinet-data.html" class="btn btn-default active">Мои данные</a>
+                    </div>
+
+                    <div class="cabinet__nav__block">
+                        <a href="cabinet-items.html" class="btn btn-default ">Мои товары</a>
+                    </div>
+
+                    <div class="cabinet__nav__block">
+                        <a href="cabinet-post.html" class="btn btn-default">Мои публикации</a>
+                    </div>
+
+                    <div class="cabinet__nav__block">
+                        <a href="#" class="btn btn__promo btn__promo--main cabinet__nav__add">+ ДОБАВИТЬ ТОВАР</a>
+                    </div>
+                </div>
+
+                <div class="cabinet__content">
+                    <div class="promo-form promo-form--cabinet">
+                        <form>
+                            <div class="promo-form__line form-group">
+                                <div class="promo-form__block">
+                                    <input type="text" class="form-control" id="form-name" placeholder="ФИО">
+                                </div>
+                            </div>
+
+                            <div class="promo-form__line form-group">
+                                <div class="promo-form__block">
+                                    <input type="email" class="form-control" id="form-email" placeholder="E-mail или Телефон:">
+                                </div>
+                            </div>
+
+                            <div class="promo-form__line form-group">
+                                <div class="promo-form__block">
+                                    <input type="password" class="form-control" id="form-password" placeholder="Пароль">
+                                </div>
+                            </div>
+
+                            <div class="promo-form__line form-group">
+                                <div class="promo-form__block">
+                                    <input type="password" class="form-control" id="form-password-repeat" placeholder="Повторите пароль">
+                                </div>
+                            </div>
+
+                            <div class="promo-form__line form-group form-group--margin-mini checkbox">
+                                <br>
+
+                                <div class="promo-form__block">
+                                    <label class="show">
+                                        <input type="checkbox" name="reg1"> <span class="checkbox__text">Политика обработки данных</span>
+                                    </label>
+
+                                    <label class="show">
+                                        <input type="checkbox" name="reg1"> <span class="checkbox__text">Хочу получать рассылки</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="promo-form__line form-group">
+                                <div class="promo-form__block">
+                                    <button type="submit" class="btn btn__promo promo-form__submit">Сохранить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+//= _footer.html

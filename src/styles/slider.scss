@@ -72,10 +72,10 @@
 
 // product slider
 .product-for {
-  height: 291px;
+  height: 396px;
+  margin-bottom: 32px;
   overflow: hidden;
-  border: 1px solid #d5d5d5;
-  margin-bottom: 38px;
+  border-radius: 5px;
 
   .slick-list {
     height: 100%;
@@ -122,9 +122,8 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    // width: 100%;
-    max-width: 90%;
-    max-height: 90%;
+    height: 100%;
+    border-radius: 5px;
 
     @media(max-width: $screen-sm){
       position: relative;
@@ -136,7 +135,7 @@
 }
 
 .product-nav {
-  height: 64px;
+  height: 132px;
   overflow: hidden;
 
   @media(max-width: $screen-md){
@@ -149,7 +148,7 @@
   .slick-list {
     margin: 0px -18px;
 
-    @media(max-width: $screen-sm){
+    @media(max-width: $screen-md){
       margin-left: -10px;
       margin-right: -10px;
     }
@@ -202,13 +201,16 @@
   }
 
   &__item {
-    width: 111px !important;
-    height: 64px;
+    //width: 111px !important;
+    width: 100%;
+    height: 132px;
     //padding: 0px 19px;
     position: relative;
     overflow: hidden;
     vertical-align: top;
     cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 18px;
 
     @media(max-width: $screen-sm){
       width: 100% !important;
@@ -220,13 +222,13 @@
     //position: absolute;
     //top: 0;
     //left: 0;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     //width: 100%;
     height: 100%;
     //cursor: pointer;
-    border: 1px solid #d5d5d5;
+    border-radius: 5px;
 
     @media(max-width: $screen-sm){
 
@@ -259,8 +261,6 @@
 }
 
 .promo-slider {
-
-
   .slick-list {
     margin: -8px -25px 0px -15px;
     padding-top: 8px;
@@ -277,6 +277,44 @@
     @media(max-width: $screen-md){
       padding-left: 10px;
       padding-right: 10px;
+    }
+  }
+}
+
+.slider-company {
+  margin-top: -5px;
+
+  .slick-slide {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .slick-list {
+    //margin-left: -20px;
+  }
+
+  .slick-arrow {
+    margin-top: 0;
+
+    &.slick-prev {
+      left: -6px;
+    }
+    &.slick-next {
+      right: -6px;
+    }
+
+    &:before, &:after {
+      font-size: 25px;
+    }
+  }
+
+  &__item {
+    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+    width: auto !important;
+    padding: 10px 15px;
+
+    img {
+      height: 100px;
     }
   }
 }
