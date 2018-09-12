@@ -122,13 +122,13 @@ $('.slider-company').slick({
     focusOnSelect: true,
     responsive: [
         {
-            breakpoint: 1050,
+            breakpoint: 1250,
             settings: {
                 slidesToShow: 3,
             }
         },
         {
-            breakpoint: 700,
+            breakpoint: 800,
             settings: {
                 slidesToShow: 2,
             }

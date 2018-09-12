@@ -282,25 +282,38 @@
 }
 
 .slider-company {
-  margin-top: -20px;
+  //margin-top: -9px;
+  //margin-top: -11px;
+  padding-top: 3px;
 
   .slick-slide {
-    padding: 20px 15px 30px 15px;
+    //padding: 20px 15px 30px 15px;
     text-align: center;
   }
 
   .slick-list {
     //margin-left: -20px;
+    padding: 11px 9px 25px 9px;
   }
 
   .slick-arrow {
     margin-top: 0;
+    transform: none;
+    top: 35px;
 
     &.slick-prev {
-      left: -6px;
+      left: -12px;
+
+      @media(max-width: $screen-xs){
+        left: -5px;
+      }
     }
     &.slick-next {
-      right: -6px;
+      right: -12px;
+
+      @media(max-width: $screen-xs){
+        right: -5px;
+      }
     }
 
     &:before, &:after {
@@ -313,10 +326,14 @@
     height: 104px;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+
     padding: 5px 5px;
     text-align: center;
     position: relative;
+
+    &:hover, &:focus {
+      box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4);
+    }
 
     img {
       height: 100%;
@@ -343,11 +360,16 @@
     background-repeat: no-repeat !important;
   }
 
+  &__title {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
   &__wrapper {
-    margin-top: 40px;
+    margin-top: 46px;
     border-radius: 5px;
     background-color: #f5f5f5;
-    padding: 22px 29px;
+    padding: 22px 29px 9px 29px;
 
     @media(max-width: $screen-xs){
       padding-left: 10px;
@@ -359,19 +381,32 @@
     .slider-company {
       &__item {
         box-shadow: none;
+        height: 107px;
 
         &:hover, &:focus {
-          box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+          //box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4);
         }
       }
     }
 
     .slick-arrow {
+      &:hover, &:focus {
+        color: white;
+      }
+
       &.slick-prev {
-        left: -20px;
+        left: -25px;
+
+        @media(max-width: $screen-xs){
+          left: -5px;
+        }
       }
       &.slick-next {
-        right: -20px;
+        right: -25px;
+
+        @media(max-width: $screen-xs){
+          right: -5px;
+        }
       }
     }
   }

@@ -87,6 +87,7 @@
     & > * {
       color: #737373;
       margin: 0;
+      letter-spacing: 0.2px;
     }
   }
 }
@@ -96,10 +97,14 @@
   @include make-row;
   margin-left: -16px;
   margin-right: -16px;
+  margin-bottom: 9px;
 
   @media(max-width: $screen-md){
     margin-left: -10px;
     margin-right: -10px;
+  }
+  @media(max-width: $screen-sm){
+    margin-bottom: 0;
   }
 
   &__block {

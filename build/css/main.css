@@ -8620,16 +8620,25 @@ form {
       padding-right: 10px; } }
 
 .slider-company {
-  margin-top: -20px; }
+  padding-top: 3px; }
   .slider-company .slick-slide {
-    padding: 20px 15px 30px 15px;
     text-align: center; }
+  .slider-company .slick-list {
+    padding: 11px 9px 25px 9px; }
   .slider-company .slick-arrow {
-    margin-top: 0; }
+    margin-top: 0;
+    transform: none;
+    top: 35px; }
     .slider-company .slick-arrow.slick-prev {
-      left: -6px; }
+      left: -12px; }
+      @media (max-width: 700px) {
+        .slider-company .slick-arrow.slick-prev {
+          left: -5px; } }
     .slider-company .slick-arrow.slick-next {
-      right: -6px; }
+      right: -12px; }
+      @media (max-width: 700px) {
+        .slider-company .slick-arrow.slick-next {
+          right: -5px; } }
     .slider-company .slick-arrow:before, .slider-company .slick-arrow:after {
       font-size: 25px; }
   .slider-company__item {
@@ -8637,10 +8646,11 @@ form {
     height: 104px;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
     padding: 5px 5px;
     text-align: center;
     position: relative; }
+    .slider-company__item:hover, .slider-company__item:focus {
+      box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
     .slider-company__item img {
       height: 100%;
       margin: 0 auto; }
@@ -8659,23 +8669,33 @@ form {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important; }
+  .slider-company__title {
+    font-size: 16px;
+    margin-bottom: 2px; }
   .slider-company__wrapper {
-    margin-top: 40px;
+    margin-top: 46px;
     border-radius: 5px;
     background-color: #f5f5f5;
-    padding: 22px 29px; }
+    padding: 22px 29px 9px 29px; }
     @media (max-width: 700px) {
       .slider-company__wrapper {
         padding-left: 10px;
         padding-right: 10px; } }
   .slider-company--full .slider-company__item {
-    box-shadow: none; }
-    .slider-company--full .slider-company__item:hover, .slider-company--full .slider-company__item:focus {
-      box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+    box-shadow: none;
+    height: 107px; }
+  .slider-company--full .slick-arrow:hover, .slider-company--full .slick-arrow:focus {
+    color: white; }
   .slider-company--full .slick-arrow.slick-prev {
-    left: -20px; }
+    left: -25px; }
+    @media (max-width: 700px) {
+      .slider-company--full .slick-arrow.slick-prev {
+        left: -5px; } }
   .slider-company--full .slick-arrow.slick-next {
-    right: -20px; }
+    right: -25px; }
+    @media (max-width: 700px) {
+      .slider-company--full .slick-arrow.slick-next {
+        right: -5px; } }
 
 .article__main {
   width: 74%; }
@@ -9098,7 +9118,7 @@ form {
     border-radius: 5px;
     padding: 33px 30px;
     margin-bottom: 30px;
-    box-shadow: 8px 10px 30px 0px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); }
     @media (max-width: 1050px) {
       .catalog-partners__side__wrapper {
         padding: 20px 20px 10px 20px; } }
@@ -9305,7 +9325,7 @@ form {
   display: table;
   width: 100%;
   font-size: 15px;
-  box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+  box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4);
   border-radius: 5px;
   margin-bottom: 33px; }
   @media (max-width: 700px) {
@@ -9600,6 +9620,8 @@ form {
       .promo-container__sidebar, .article__sidebar {
         width: 100% !important;
         margin-left: 0; } }
+    .promo-container__sidebar .news-list, .article__sidebar .news-list {
+      padding-top: 3px; }
 
 .promo-main {
   background-size: cover !important;
@@ -9654,6 +9676,13 @@ form {
       margin-bottom: 18px; }
     .promo-main__content ul {
       margin-bottom: 33px; }
+      .promo-main__content ul li {
+        margin-bottom: 18px; }
+        .promo-main__content ul li:last-child {
+          margin-bottom: 0; }
+        .promo-main__content ul li p {
+          font-size: 16px;
+          margin-bottom: 0; }
     .promo-main__content .btn {
       min-width: 270px; }
   .promo-main__sidebar {
@@ -9973,7 +10002,7 @@ form {
       padding: 34px 34px 53px 34px;
       background-color: #fff;
       border-radius: 5px;
-      box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+      box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
       @media (max-width: 1050px) {
         .promo-alphabet__nav__block {
           padding-bottom: 34px; } }
@@ -10164,13 +10193,15 @@ form {
     background-color: #e5f7ff; }
     .promo-item__bottom > * {
       color: #737373;
-      margin: 0; }
+      margin: 0;
+      letter-spacing: 0.2px; }
 
 .attention-item {
   margin-left: -10px;
   margin-right: -10px;
   margin-left: -16px;
-  margin-right: -16px; }
+  margin-right: -16px;
+  margin-bottom: 9px; }
   .attention-item:before, .attention-item:after {
     content: " ";
     display: table; }
@@ -10180,6 +10211,9 @@ form {
     .attention-item {
       margin-left: -10px;
       margin-right: -10px; } }
+  @media (max-width: 1050px) {
+    .attention-item {
+      margin-bottom: 0; } }
   .attention-item__block {
     position: relative;
     float: left;
@@ -10764,7 +10798,7 @@ form {
   padding-bottom: 30px;
   border-radius: 5px;
   font-size: 15px;
-  box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+  box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
   @media (max-width: 1300px) {
     .contact__promo {
       padding-left: 200px; } }
@@ -10815,7 +10849,7 @@ form {
   height: 350px;
   width: 100%;
   border: none;
-  box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4); }
+  box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4); }
 
 .content {
   position: relative;
@@ -11143,9 +11177,10 @@ form {
       width: 100%;
       margin-bottom: 40px; } }
   .product-company__side__wrapper {
-    box-shadow: 8px 10px 30px rgba(136, 218, 255, 0.4);
+    box-shadow: 0px 10px 30px rgba(136, 218, 255, 0.4);
     font-size: 15px;
-    padding: 32px 36px; }
+    border-radius: 5px;
+    padding: 32px 38px 20px 38px; }
     @media (max-width: 700px) {
       .product-company__side__wrapper {
         padding: 20px 20px; } }
