@@ -35,6 +35,10 @@
     @include sprite($lock);
   }
 
+  &__play {
+    @include sprite($play);
+  }
+
   &__delete {
     @include sprite($delete-black);
   }

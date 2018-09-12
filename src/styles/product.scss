@@ -171,8 +171,8 @@
 
   &__content {
     @include make-xs-column(17);
-    @include make-md-column(18);
-    @include make-sm-column-offset(0.2);
+    @include make-md-column(17.9);
+    @include make-md-column-offset(0.3);
 
     @media(max-width: $screen-xs){
       width: 100%;
