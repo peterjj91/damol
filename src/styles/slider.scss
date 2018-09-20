@@ -48,7 +48,8 @@
       left: -44px;
 
       @media (max-width: $screen-md) {
-        left: 0;
+        left: -10px;
+        padding-left: 5px;
       }
 
       &:after {
@@ -60,7 +61,8 @@
       right: -44px;
 
       @media (max-width: $screen-md) {
-        right: 0;
+        right: -10px;
+        padding-right: 5px;
       }
 
       &:before {

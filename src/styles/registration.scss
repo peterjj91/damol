@@ -45,6 +45,10 @@
     width: 100%;
   }
 
+  .bootstrap-select {
+    width: 100% !important;
+  }
+
   &--cabinet {
     margin-top: 47px;
     max-width: 600px;
@@ -61,10 +65,6 @@
         &:last-child {
           margin-bottom: 0;
         }
-
-        .bootstrap-select {
-          width: 100% !important;
-        }
       }
 
       &__submit {
@@ -77,6 +77,12 @@
         padding-top: 7px;
         padding-bottom: 8px;
         letter-spacing: 1px;
+      }
+    }
+
+    .promo-upload {
+      &__text {
+        font-size: 16px;
       }
     }
   }

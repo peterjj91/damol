@@ -17,11 +17,17 @@
     background-color: #f6f6f6;
     border-radius: 5px;
     position: relative;
+  }
+
+  &__header {
+    margin: 0px -18px;
+    padding: 0px 18px;
+    position: relative;
 
     &:after {
       content: '';
       position: absolute;
-      top: 69px;
+      bottom: -55px;
       right: 0;
       background: url(../img/big-line.png);
       background-size: contain;
@@ -32,6 +38,13 @@
       transform: scale(-1, 1);
       pointer-events: none;
       z-index: 0;
+
+      @media(max-width: $screen-md){
+        //top: 110px;
+      }
+      @media(max-width: $screen-sm){
+        //top: 70px;
+      }
     }
   }
 

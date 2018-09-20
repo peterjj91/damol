@@ -156,7 +156,7 @@
 
             <ol class="breadcrumb">
                 <li><a href="index.html">Главная</a></li>
-                <li class="active">Члены ассоциации</li>
+                <li class="active">Регистрация</li>
             </ol>
 
             <div class="promo-registration promo-registration--main">
@@ -191,10 +191,12 @@
                         <div class="promo-form__line promo-form__line--margin-mini form-group radio">
                             <div class="promo-form__block">
                                 <label class="radio-inline">
-                                    <input type="radio" name="reg1"> <span class="radio__text">Юридическое лицо</span>
+                                    <input id="radio-2" class="radio-custom" name="reg1" type="radio" checked="">
+                                    <label for="radio-2" class="radio-custom-label radio__text">Юридическое лицо</label>
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="reg1"> <span class="radio__text">Физическое лицо</span>
+                                    <input id="radio-3" class="radio-custom" name="reg1" type="radio" checked="">
+                                    <label for="radio-3" class="radio-custom-label radio__text">Физическое лицо</label>
                                 </label>
                             </div>
                         </div>
@@ -223,6 +225,16 @@
 
                         <div class="promo-form__line form-group">
                             <div class="promo-form__block">
+                                <select name="" id="" title="Вид деятельности" class="bootstrap-select--main">
+                                    <option value="">Вид деятельности</option>
+                                    <option value="">Вид деятельности</option>
+                                    <option value="">Вид деятельности</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="promo-form__line form-group">
+                            <div class="promo-form__block">
                                 <input type="text" class="form-control" id="form-tel" placeholder="Телефон:">
                             </div>
                         </div>
@@ -243,10 +255,12 @@
                         <div class="promo-form__line form-group form-group--margin-mini checkbox">
                             <div class="promo-form__block">
                                 <label class="show">
-                                    <input type="checkbox" name="reg1"> <span class="checkbox__text">Политика обработки данных</span>
+                                    <input id="politic-agree" class="checkbox-custom" name="politic-agree" type="checkbox">
+                                    <label for="politic-agree" class="checkbox-custom-label checkbox__text">Политика обработки данных</label>
                                 </label>
                                 <label class="show">
-                                    <input type="checkbox" name="reg1"> <span class="checkbox__text">Хочу получать рассылки</span>
+                                    <input id="sub1" class="checkbox-custom" name="sub1" type="checkbox">
+                                    <label for="sub1" class="checkbox-custom-label checkbox__text">Хочу получать рассылки</label>
                                 </label>
                             </div>
                         </div>
@@ -317,13 +331,15 @@
                         <form>
                             <div class="promo-form__line form-group radio">
                                 <div class="promo-form__block">
-                                    <label class="">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Производитель</span>
-                                    </label>
+                                    <div class="show">
+                                        <input id="prod" class="radio-custom" name="prod" type="radio">
+                                        <label for="prod" class="radio-custom-label radio__text">Производитель</label>
+                                    </div>
     
-                                    <label class="">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Дистрибьютор</span>
-                                    </label>
+                                    <div class="show">
+                                        <input id="dist" class="radio-custom" name="prod" type="radio">
+                                        <label for="dist" class="radio-custom-label radio__text">Дистрибьютор</label>
+                                    </div>
                                 </div>
                             </div>
     
@@ -389,12 +405,22 @@
                         <form>
                             <div class="promo-form__line promo-form__line--margin-mini form-group radio">
                                 <div class="promo-form__block">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Юридическое лицо</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Физическое лицо</span>
-                                    </label>
+                                    <div class="radio-inline">
+                                        <input id="prod11" class="radio-custom" name="reg1" type="radio">
+                                        <label for="prod11" class="radio-custom-label radio__text">Юридическое лицо</label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <input id="prod22" class="radio-custom" name="reg1" type="radio">
+                                        <label for="prod22" class="radio-custom-label radio__text">Физическое лицо</label>
+                                    </div>
+    
+    
+                                    <!--<label class="radio-inline">-->
+                                        <!--<input type="radio" name="reg1"> <span class="radio__text">Юридическое лицо</span>-->
+                                    <!--</label>-->
+                                    <!--<label class="radio-inline">-->
+                                        <!--<input type="radio" name="reg1"> <span class="radio__text">Физическое лицо</span>-->
+                                    <!--</label>-->
                                 </div>
                             </div>
     

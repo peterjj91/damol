@@ -243,7 +243,7 @@
       }
 
       &--delete {
-        opacity: 0;
+        //opacity: 0;
         vertical-align: top;
         text-align: center;
         padding-right: 15px;
@@ -252,12 +252,12 @@
         @media(max-width: $screen-xs){
           vertical-align: top;
           padding-top: 0px;
-          opacity: 1;
+          //opacity: 1;
           text-align: right;
         }
 
         .cabinet-item__table:hover & {
-          opacity: 1;
+          //opacity: 1;
         }
       }
 
@@ -267,12 +267,22 @@
 
       &--website {
         width: 150px;
+
+        a {
+          text-decoration: underline;
+        }
       }
     }
 
     p {
       letter-spacing: 0.5px;
       margin-bottom: 3px;
+
+      a {
+        letter-spacing: normal;
+        color: #0095d9;
+        font-weight: 500;
+      }
     }
 
     &__img {
@@ -318,6 +328,19 @@
           margin-bottom: 0;
         }
       }
+    }
+  }
+
+  &__more {
+    margin-top: 61px;
+    text-align: center;
+
+    .btn {
+      min-width: 242px;
+      padding: 7px 0px 8px 0px;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
     }
   }
 

@@ -144,12 +144,8 @@ form {
   margin-left: 0;
 }
 
-.radio-inline {
-  //margin-bottom: 0;
-}
-
-.radio-inline {
-  //margin-bottom: 0;
+.radio-inline, .checkbox-inline {
+  padding-left: 0;
 }
 
 .radio-inline + .radio-inline,
@@ -197,6 +193,8 @@ form {
 }
 
 .promo-upload {
+  $block-name: &; // #{$block-name}__element {}
+
   &__circle {
     width: 41px;
     height: 41px;
@@ -238,10 +236,16 @@ form {
   &__text {
     display: inline-block;
     margin: 0;
+    text-decoration: underline;
+    color: #636363;
   }
 
   &--dark {
-
+    #{$block-name} {
+      &__text {
+        color: white;
+      }
+    }
   }
 }
 
@@ -272,6 +276,7 @@ form {
 .checkbox-custom-label, .radio-custom-label {
   position: relative;
   font-weight: normal;
+  font-size: 16px;
 
   &:before {
     margin-top: -3px;
@@ -281,39 +286,41 @@ form {
 .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
   content: '';
   background: white;
-  border: 1px solid #ff572a;
+  border: 1px solid #f0f0f0;
   display: inline-block;
   vertical-align: middle;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   padding: 2px;
   margin-right: 6px;
   text-align: center;
+  font-size: 12px;
 }
 
 .checkbox-custom:checked + .checkbox-custom-label:before {
   content: "\e013";
-  color: #ff572a;
+  color: black;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  line-height: 7px;
+  line-height: 3px;
 }
 
 .radio-custom + .radio-custom-label:before {
-  border-width: 3px;
+  border-width: 1px;
 }
 
 .radio-custom + .radio-custom-label:before {
   border-radius: 50%;
-  border-color: #eeeeee;
+  border-color: #f0f0f0;
 }
 
 .radio-custom:checked + .radio-custom-label:before {
   content: "";
-  background: white;
-  border-color: #ff572a;
+  background: black;
+  border-width: 1px;
+  box-shadow: inset 0px 0px 0px 3px white;
 }
 
 .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {

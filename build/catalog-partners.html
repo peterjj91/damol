@@ -231,7 +231,7 @@
                                         <a href="#" class="cabinet-item__table__title">Масло сливочное, Крестьянское</a>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--website">
-                                        <p><a href="#">сайт компании</a></p>
+                                        <p><a href="#">kama-milk.ru</a></p>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--city">
                                         <p>Нижний Новгород, Интересный город, Улица Пушкина, Дом Колотушкина</p>
@@ -252,7 +252,7 @@
                                         <a href="#" class="cabinet-item__table__title">Масло сливочное, Крестьянское</a>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--website">
-                                        <p><a href="#">сайт компании</a></p>
+                                        <p><a href="#">kama-milk.ru</a></p>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--city">
                                         <p>Нижний Новгород, Интересный город, Улица Пушкина, Дом Колотушкина</p>
@@ -273,7 +273,7 @@
                                         <a href="#" class="cabinet-item__table__title">Масло сливочное, Крестьянское</a>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--website">
-                                        <p><a href="#">сайт компании</a></p>
+                                        <p><a href="#">kama-milk.ru</a></p>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--city">
                                         <p>Нижний Новгород, Интересный город, Улица Пушкина, Дом Колотушкина</p>
@@ -294,7 +294,7 @@
                                         <a href="#" class="cabinet-item__table__title">Масло сливочное, Крестьянское</a>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--website">
-                                        <p><a href="#">сайт компании</a></p>
+                                        <p><a href="#">kama-milk.ru</a></p>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--city">
                                         <p>Нижний Новгород, Интересный город, Улица Пушкина, Дом Колотушкина</p>
@@ -315,7 +315,7 @@
                                         <a href="#" class="cabinet-item__table__title">Масло сливочное, Крестьянское</a>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--website">
-                                        <p><a href="#">сайт компании</a></p>
+                                        <p><a href="#">kama-milk.ru</a></p>
                                     </div>
                                     <div class="cabinet-item__table__cell cabinet-item__table__cell--city">
                                         <p>Нижний Новгород, Интересный город, Улица Пушкина, Дом Колотушкина</p>
@@ -388,13 +388,15 @@
                         <form>
                             <div class="promo-form__line form-group radio">
                                 <div class="promo-form__block">
-                                    <label class="">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Производитель</span>
-                                    </label>
+                                    <div class="show">
+                                        <input id="prod" class="radio-custom" name="prod" type="radio">
+                                        <label for="prod" class="radio-custom-label radio__text">Производитель</label>
+                                    </div>
     
-                                    <label class="">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Дистрибьютор</span>
-                                    </label>
+                                    <div class="show">
+                                        <input id="dist" class="radio-custom" name="prod" type="radio">
+                                        <label for="dist" class="radio-custom-label radio__text">Дистрибьютор</label>
+                                    </div>
                                 </div>
                             </div>
     
@@ -460,12 +462,22 @@
                         <form>
                             <div class="promo-form__line promo-form__line--margin-mini form-group radio">
                                 <div class="promo-form__block">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Юридическое лицо</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="reg1"> <span class="radio__text">Физическое лицо</span>
-                                    </label>
+                                    <div class="radio-inline">
+                                        <input id="prod11" class="radio-custom" name="reg1" type="radio">
+                                        <label for="prod11" class="radio-custom-label radio__text">Юридическое лицо</label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <input id="prod22" class="radio-custom" name="reg1" type="radio">
+                                        <label for="prod22" class="radio-custom-label radio__text">Физическое лицо</label>
+                                    </div>
+    
+    
+                                    <!--<label class="radio-inline">-->
+                                        <!--<input type="radio" name="reg1"> <span class="radio__text">Юридическое лицо</span>-->
+                                    <!--</label>-->
+                                    <!--<label class="radio-inline">-->
+                                        <!--<input type="radio" name="reg1"> <span class="radio__text">Физическое лицо</span>-->
+                                    <!--</label>-->
                                 </div>
                             </div>
     

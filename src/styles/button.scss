@@ -27,7 +27,12 @@ button {
     box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
     @include transition(all .2s ease-in-out);
     text-transform: uppercase;
-    background-color: $color-deep;
+    //background-color: $color-deep;
+    background: rgb(37,186,255);
+    background: -moz-linear-gradient(left, rgba(37,186,255,1) 45%, rgba(0,157,229,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(37,186,255,1) 45%,rgba(0,157,229,1) 100%);
+    background: linear-gradient(to right, rgba(37,186,255,1) 45%,rgba(0,157,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25baff', endColorstr='#009de5',GradientType=1 );
 
     @media (max-width: $screen-sm){
       font-size: 14px;
@@ -37,30 +42,36 @@ button {
     }
 
     &:hover, &:focus {
+      background: rgb(37,186,255);
+      background: -moz-linear-gradient(left, rgba(37,186,255,1) 45%, rgba(0,157,229,1) 100%);
+      background: -webkit-linear-gradient(left, rgba(37,186,255,1) 45%,rgba(0,157,229,1) 100%);
+      background: linear-gradient(to right, rgba(37,186,255,1) 45%,rgba(0,157,229,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25baff', endColorstr='#009de5',GradientType=1 );
       opacity: $opacity-main;
       color: white;
       box-shadow: 0px 5px 20px rgba(0, 149, 217, 0.7);
     }
 
     &--clear {
-        background-color: transparent;
+        background: transparent;
         color: #2b2b2b;
         box-shadow: none;
 
         &:hover, &:focus {
-            background-color: transparent;
+            background: transparent;
             color: #2b2b2b;
             box-shadow: none;
         }
     }
 
     &--main {
-      background-color: #fff;
-      border: 2px solid #25baff;
-      color: #25baff;
+      background: #fff;
+      border: 2px solid #0095d9;
+      color: #0095d9;
 
       &:hover, &:focus {
-        color: #25baff;
+        color: #0095d9;
+        background: #fff;
       }
     }
   }
@@ -69,11 +80,11 @@ button {
     background-color: #eeeeee;
 
     &.active {
-      background-color: #25baff;
+      background-color: #0095d9;
       color: white;
 
       &:hover, &:focus {
-        background-color: #25baff;
+        background-color: #0095d9;
         color: white;
       }
     }

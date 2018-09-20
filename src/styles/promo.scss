@@ -17,6 +17,7 @@
 
   &__content {
     @include make-xs-column(24);
+    @include make-sm-column(13.0);
     @include make-md-column(14.0);
     flex: auto;
 
@@ -27,6 +28,7 @@
 
   &__sidebar {
     @include make-xs-column(24);
+    @include make-sm-column(6.7);
     @include make-md-column(5.7);
     float: right !important;
     width: 297px !important;
@@ -60,22 +62,30 @@
     display: flex;
 
     @media(max-width: $screen-md) {
-      display: inline-block;
+      //display: inline-block;
       width: 100%;
       vertical-align: top;
       margin: 0;
     }
+    @media(max-width: $screen-xs) {
+      display: inline-block;
+    }
   }
 
   &__content {
-    @include make-xs-column(24);
+    @include make-xs-column(18);
+    @include make-sm-column(18);
     @include make-md-column(15);
     flex: auto;
+    padding-right: 20px !important;
 
     @media(max-width: $screen-md) {
-      flex: none;
-      padding: 0 !important;
+      //flex: none;
+      padding-left: 0 !important;
       margin-bottom: 40px;
+    }
+    @media(max-width: $screen-xs) {
+      width: 100%;
     }
 
     p {
@@ -109,9 +119,12 @@
     width: 297px !important;
     padding-top: 6px;
 
-    @media(max-width: $screen-md) {
-      width: 100% !important;
+    @media(max-width: $screen-sm) {
+      //width: 100% !important;
       padding: 0 !important;
+    }
+    @media(max-width: $screen-xs) {
+      width: 100%;
     }
 
     &__title {
@@ -256,7 +269,9 @@
 
   &__block {
     @include make-xs-column(20);
+    @include make-sm-column(16.1);
     @include make-md-column(17.1);
+    @include make-lg-column(17.1);
     position: relative;
     padding: 24px 33px 137px 33px !important;
     background: rgba(255, 255, 255, 0.6);
@@ -331,7 +346,7 @@
 
   &__block {
     @include make-xs-column(12);
-    @include make-sm-column(12);
+    @include make-sm-column(8);
     @include make-md-column(8);
     display: inline-block;
     vertical-align: top;
@@ -341,9 +356,11 @@
     margin-bottom: 33px;
 
     @media(max-width: $screen-md) {
-      @include make-xs-column(24);
       padding-left: 10px !important;
       padding-right: 10px !important;
+    }
+    @media(max-width: $screen-xs) {
+      @include make-xs-column(24);
     }
 
     &--full {
